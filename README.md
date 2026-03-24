@@ -56,7 +56,39 @@
 ### Step 11:
   Stop
 # Program:
+~~~
+#include <stdio.h>
+
+int main() {
+    float math, science, english, average;
+    printf("Enter marks in Math: ");
+    scanf("%f", &math);
+    printf("Enter marks in Science: ");
+    scanf("%f", &science);
+    printf("Enter marks in English: ");
+    scanf("%f", &english);
+    average = (math + science + english) / 3.0;
+    printf("\nAverage Marks: %.2f\n", average);
+    if (average >= 90.0) {
+        printf("Grade: A\n");
+    } else {
+        if (average >= 75.0) {
+            printf("Grade: B\n");
+        } else {
+            if (average >= 50.0) {
+                printf("Grade: C\n");
+            } else {
+                printf("Grade: F\n");
+            }
+        }
+    }
+
+    return 0;
+}
+~~~
 # Output:
+<img width="1485" height="972" alt="image" src="https://github.com/user-attachments/assets/97a73692-c865-4b79-a19e-75b7899578e8" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -88,7 +120,25 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 
 # Program:
+~~~
+#include <stdio.h>
+
+int main() {
+    int num, range;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Enter the range: ");
+    scanf("%d", &range);
+    printf("\nMultiplication Table of %d up to %d:\n", num, range);
+    for (int i = 1; i <= range; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+    return 0;
+}
+~~~
 # Output:
+<img width="1456" height="923" alt="image" src="https://github.com/user-attachments/assets/2dfe5f8d-fc5f-421e-bcb9-507622e05d2b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -131,7 +181,34 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7:   
   Stop
 # Program:
+~~~
+#include <stdio.h>
+
+int main() {
+    int num, i, isPrime = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num <= 1) {
+        isPrime = 0;
+    } else {
+        for (i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+    }
+    if (isPrime)
+        printf("%d is a Prime number.\n", num);
+    else
+        printf("%d is not a Prime number.\n", num);
+
+    return 0;
+}
+~~~
 # Output:
+<img width="1460" height="947" alt="image" src="https://github.com/user-attachments/assets/9e96a52e-af74-4cb2-a233-2053f116c206" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -179,7 +256,33 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+~~~
+#include <stdio.h>
+int main() {
+    int i, j;
+    for (j = 1; j <= 5; j++) {
+        printf("%d", j);
+    }
+    printf("\n");
+    for (i = 2; i <= 4; i++) {
+        printf("%d", i);         
+
+        for (j = 1; j <= 3; j++) { 
+            printf(" ");
+        }
+
+        printf("%d\n", 6 - i);     
+    }
+    for (j = 5; j >= 1; j--) {
+        printf("%d", j);
+    }
+
+    return 0;
+}
+~~~
 # Output:
+<img width="1462" height="917" alt="image" src="https://github.com/user-attachments/assets/4fbf55ba-8ab0-4882-aac6-4fb203f5c8cc" />
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -232,6 +335,29 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+## Program:
+~~~
+#include<stdio.h>
+int main(){
+    int i,j,k,h;
+    for (i=8;i>=1;i--){
+        for(j=i;j<=7;j++){
+            printf("%d ",j);
+        }
+        for(h=8;h>=8;h--){
+            printf("0 ");
+        }
+        for(k=7;k>=i;k--){
+            printf("%d ",k);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+~~~
+## Output:
+<img width="1446" height="969" alt="image" src="https://github.com/user-attachments/assets/e1cd1a0c-e493-4b5d-8d66-efaa85549ea9" />
+
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
